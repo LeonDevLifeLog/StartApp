@@ -1,2 +1,23 @@
+pluginManagement {
+    repositories {
+        maven {
+            url "https://mirrors.cloud.tencent.com/nexus/repository/maven-public/"
+        }
+        maven {
+            url "https://repo.huaweicloud.com/repository/maven/"
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        maven {
+            url "https://mirrors.cloud.tencent.com/nexus/repository/maven-public/"
+        }
+        maven {
+            url "https://repo.huaweicloud.com/repository/maven/"
+        }
+    }
+}
 include ':app'
 rootProject.name = "StartApp"
